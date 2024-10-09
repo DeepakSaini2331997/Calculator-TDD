@@ -10,8 +10,18 @@ describe('Calculator',()=>{
         expect(add("1")).toBe(1)
     })
 
-    test('should return sum if input is multiple comma-separated',()=>{
+    test('should return sum if input is two comma-separated',()=>{
         expect(add("1,2")).toBe(3)
     })
+
+    test('should return sum if input is multiple comma-separated',()=>{
+        expect(add("1,2,3,4,5")).toBe(15)
+    })
+
+    test('should handle new line input is multiple comma-separated',()=>{
+        expect(add("1\n2,3")).toBe(6)
+    })
+
+
 
 })
