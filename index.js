@@ -7,7 +7,7 @@ const read = readline.createInterface({
 })
 
 
-read.question('Enter string of numbers',(input)=>{
+read.question('Enter string of numbers ',(input)=>{
     try{
         const result = add(input)
         console.log(`Output: ${result}`)
