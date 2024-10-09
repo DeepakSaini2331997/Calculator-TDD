@@ -26,4 +26,8 @@ describe('Calculator',()=>{
         expect(add("//;\n1;2")).toBe(3);
     })
 
+    test('should throw error if negative number', () => {
+        expect(() => add("1,-2,3")).toThrow("negative numbers not allowed: -2");
+    })
+
 })
