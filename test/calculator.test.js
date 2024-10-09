@@ -22,6 +22,8 @@ describe('Calculator',()=>{
         expect(add("1\n2,3")).toBe(6)
     })
 
-
+    test('should support delimiters the format //;\n1;2', () => {
+        expect(add("//;\n1;2")).toBe(3);
+    })
 
 })
